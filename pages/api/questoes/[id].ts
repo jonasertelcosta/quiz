@@ -1,6 +1,6 @@
 import questoes from "../../bancoDeQuestoes"
 
-export default (req,res) => {
+const Func = (req,res) => {
     // recebe id pela url
     const idSelecionado = +req.query.id
 
@@ -14,3 +14,5 @@ export default (req,res) => {
         res.status(204).send()
     }
 }
+
+export default Func
