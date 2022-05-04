@@ -1,4 +1,4 @@
-import questoes from "../../../components/bancoDeQuestoes"
+import questoes from "../bancoDeQuestoes"
 
 const Func = (req,res) => {
     // recebe id pela url
