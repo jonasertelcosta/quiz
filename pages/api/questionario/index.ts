@@ -1,5 +1,5 @@
 import { embaralhar } from "../../../functions/arrays"
-import questoes from "../../bancoDeQuestoes"
+import questoes from "../bancoDeQuestoes"
 
 const varFunc = (req,res) => {
     const ids = questoes.map(questao => questao.id)    
