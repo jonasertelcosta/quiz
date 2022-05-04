@@ -4,20 +4,12 @@ import RespostaModel from '../model/resposta'
 import Questionario from '../components/Questionario'
 import { useRouter } from 'next/router'
 
-const questaoMock = new QuestaoModel(1, 'Melhor Cor?',[
-  RespostaModel.errada('Verde'),
-  RespostaModel.errada('Vermelha'),
-  RespostaModel.errada('Azul'),
-  RespostaModel.certa('Preta'),
-
-])
-
 const BASE_URL = '/api/'
 
 export default function Home() {
   const router = useRouter()
   const [idsDasQuestoes,setIdsDasQuestoes] = useState<number[]>([])
-  const [questao, setQuestao] = useState<QuestaoModel>(questaoMock)
+  const [questao, setQuestao] = useState<QuestaoModel>()
   const [respostasCertas, setRespostasCertas] = useState<number>(0)  
 
 
